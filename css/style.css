@@ -1,0 +1,47 @@
+.dui{
+    border-radius: 50px;
+    background: #ebecef;
+    box-shadow:  5px 5px 100px #cacbce, -5px -5px 100px #ffffff;
+    height: 150px;
+    width: 300px;
+}
+.m{
+    width: 50px;
+}
+.mp{
+    width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.h{
+    display: inline-block;
+    vertical-align: middle;
+}
+.s{
+    color: green;
+    display: inline-block;
+    vertical-align: middle;
+}
+.slide {
+    border: 2px solid #2980b9;
+    color: #2980b9;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    left: 0;
+    background-color: #2980b9;
+    transition: ease-in-out .5s;
+}
+
+.slide:hover::before {
+    width: 100%;
+}
